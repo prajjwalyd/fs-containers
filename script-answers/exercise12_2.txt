@@ -1,0 +1,14 @@
+Script started on 2024-01-15 04:07:44+05:30 [TERM="xterm-256color" TTY="/dev/pts/12" COLUMNS="112" LINES="14"]
+[?2004h]0;prajjwalyd@DESKTOP-FT1DGE0: ~/files-repos/full-stack-open-containers[01;32mprajjwalyd@DESKTOP-FT1DGE0[00m:[01;34m~/files-repos/full-stack-open-containers[00m$ [7mdocker container run -it ubuntu bash[27mdocker container run -it ubuntu bash
+[?2004l[?2004h]0;root@aa5519ab303b: /root@aa5519ab303b:/# [7mmkdir /usr/src/app[27mmkdir /usr/src/app
+[?2004l[?2004h]0;root@aa5519ab303b: /root@aa5519ab303b:/# cd usr/src/app
+[?2004l[?2004h]0;root@aa5519ab303b: /usr/src/approot@aa5519ab303b:/usr/src/app# o r tpuch       touch index.js
+[?2004l[?2004h]0;root@aa5519ab303b: /usr/src/approot@aa5519ab303b:/usr/src/app# [7mecho 'console.log("Hello, world!");' > /usr/src/app/index.js[27m
+[Aroot@aa5519ab303b:/usr/src/app# echo 'console.log("Hello, world!");' > /usr/src/app/index.js
+[A
+[?2004l[?2004h]0;root@aa5519ab303b: /usr/src/approot@aa5519ab303b:/usr/src/app# [Kexit
+[?2004lexit
+[?2004h]0;prajjwalyd@DESKTOP-FT1DGE0: ~/files-repos/full-stack-open-containers[01;32mprajjwalyd@DESKTOP-FT1DGE0[00m:[01;34m~/files-repos/full-stack-open-containers[00m$ e[Kexit
+[?2004lexit
+
+Script done on 2024-01-15 04:08:48+05:30 [COMMAND_EXIT_CODE="0"]
