@@ -1,0 +1,113 @@
+Script started on 2024-01-15 19:31:48+05:30 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="106" LINES="15"]
+[?2004h]0;prajjwalyd@DESKTOP-FT1DGE0: /mnt/c/Users/91946/Downloads/git-repos/full-stack-open-containers/todo-app/todo-backend[01;32mprajjwalyd@DESKTOP-FT1DGE0[00m:[01;34m/mnt/c/Users/91946/Downloads/git-repos/full-stack-open-containers/todo-app/todo-backend[00m$ docker volume rm $(docker volume ls -q)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Prmi $(docker image[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4P $(docker ps -aq)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@stop[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Prm[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@stop[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@rm -vf[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cun -p 3123:3000 todo-backend[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6Pbuild -t todo-backend .[K[C[C[C[C[C[C[C[C[C[C[12Pcd todo-backend/[4Papp/[C[C[C[C[C[C[C[C[C[Cdocker build -t todo-backend[C[C[C[C[C[C[C[C[C[Cscript script-answers/exercise12_3.txt[C[C[C[C[C[C[C[C[C[C[12Pnano /usr/src/app/index.js[C[C[C[C[C[C[C[C[C[Cscript script-answers/exercise12_3.txt[C[C[C[C[C[C[C[C[C[Cexit[Kdocker start -i recursing_heisenberg [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[15Pcontainer ls -a[C[C[C[C[C[C[C[C[C[Cnano[KNANOscript script-answers/exercise12_2.txt[C[C[C[C[C[C[C[C[C[Cexit[Kdocker container run -it ubuntu bash[C[C[C[C[C[C[C[C[C[Cexit[Kscript script-answers/exercise12_2.txt[C[C[C[C[C[C[C[C[C[Ccurl http://helsinki.fi -o script-answers/exercise12_1.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[C[C[C[C[C[C[C[C[C[Cexit[K[1Ptdocker container run -it ubuntu[C[C[C[C[C[C[C[C[C[Cexit[Kdocker container run -it ubuntu bash[C[C[C[C[C[C[C[C[C[Ccode .[K[4Plscd files-repos[K[K[K[K[K[K[K[K[K[K[K[K[K[Kdocker exec -it todo-backend-mongo-1 bash01~
+[?2004lOCI runtime exec failed: exec failed: unable to start container process: exec: "bash01~": executable file not found in $PATH: unknown
+[?2004h]0;prajjwalyd@DESKTOP-FT1DGE0: /mnt/c/Users/91946/Downloads/git-repos/full-stack-open-containers/todo-app/todo-backend[01;32mprajjwalyd@DESKTOP-FT1DGE0[00m:[01;34m/mnt/c/Users/91946/Downloads/git-repos/full-stack-open-containers/todo-app/todo-backend[00m$ docker exec -it todo-backend-mongo-1 bash01~[K[K[K[K[K[K[K[K
+[?2004l"docker exec" requires at least 2 arguments.
+See 'docker exec --help'.
+
+Usage:  docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+
+Execute a command in a running container
+[?2004h]0;prajjwalyd@DESKTOP-FT1DGE0: /mnt/c/Users/91946/Downloads/git-repos/full-stack-open-containers/todo-app/todo-backend[01;32mprajjwalyd@DESKTOP-FT1DGE0[00m:[01;34m/mnt/c/Users/91946/Downloads/git-repos/full-stack-open-containers/todo-app/todo-backend[00m$ docker exec -it todo-backend-mongo-1[K1
+[?2004l"docker exec" requires at least 2 arguments.
+See 'docker exec --help'.
+
+Usage:  docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+
+Execute a command in a running container
+[?2004h]0;prajjwalyd@DESKTOP-FT1DGE0: /mnt/c/Users/91946/Downloads/git-repos/full-stack-open-containers/todo-app/todo-backend[01;32mprajjwalyd@DESKTOP-FT1DGE0[00m:[01;34m/mnt/c/Users/91946/Downloads/git-repos/full-stack-open-containers/todo-app/todo-backend[00m$ docker exec -it todo-backend-mongo-1 bash
+[?2004l^[[201~^[[201~[?2004hroot@ff08f7165fe5:/# ~
+[?2004lbash: /data/db: Is a directory
+[?2004hroot@ff08f7165fe5:/# docker exec -it todo-backend-mongo-1 bash
+[?2004lbash: docker: command not found
+[?2004hroot@ff08f7165fe5:/# ~docker exec -it todo-backend-mongo-1 bash
+[?2004lbash: ~docker: command not found
+[?2004hroot@ff08f7165fe5:/# ~docker exec -it todo-backend-mongo-1 bash
+[?2004l^[[bash: ~docker: command not found
+[?2004hroot@ff08f7165fe5:/# ~ mongosh -u root -p example
+[?2004l]0;mongosh mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	65a53b2415346756de2444bf
+
+Connecting to:		[1m[32mmongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.1.1[0m
+Using MongoDB:		7.0.5
+[1m[33mUsing Mongosh[0m:		2.1.1
+
+For mongosh info see: [1mhttps://docs.mongodb.com/mongodb-shell/[0m
+
+[1G[0J [1G[1m[33m------[0m
+   [1m[33mThe server generated these startup warnings when booting[0m
+   2024-01-15T12:51:42.696+00:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+   2024-01-15T12:51:43.970+00:00: /sys/kernel/mm/transparent_hugepage/enabled is 'always'. We suggest setting it to 'never'
+   2024-01-15T12:51:43.970+00:00: vm.max_map_count is too low
+[1m[33m------[0m
+
+[1G[0Jtest> [7G
+
+[1G[0Jtest> [7Guse the_database
+switched to db the_database
+[1G[0Jthe_database> [15Gdb.todos.insertOne({ text[33mtext[39m: [32m'[39m[32mI[39m[32mn[39m[32mc[39m[32mr[39m[32me[39m[32ma[39m[32ms[39m[32me[39m [32mt[39m[32mh[39m[32me[39m [32mn[39m[32mu[39m[32mm[39m[32mb[39m[32me[39m[32mr[39m [32mo[39m[32mf[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m[32ms[39m [32mi[39m[32mn[39m [32mm[39m[32my[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m[32mb[39m[32me[39m[32ml[39m[32mt[39m[32m'[39m, d[36mdo[39mdone: fals[33mfalse[39m })
+{
+  acknowledged: [33mtrue[39m,
+  insertedId: ObjectId([32m'65a53b3015346756de2444c0'[39m)
+}
+[1G[0Jthe_database> [15Gdb.todos.find({})
+[
+  {
+    _id: ObjectId([32m'65a48522d5c4726d0de2fdbd'[39m),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'65a48522d5c4726d0de2fdbe'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId([32m'65a52bfc5444d56802b9e4d7'[39m),
+    text: [32m'Increase the number of tools in my toolbelt'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId([32m'65a539817df4b48b9bf0e9c2'[39m),
+    text: [32m'Increase the number of tools in my toolbelt'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId([32m'65a53b3015346756de2444c0'[39m),
+    text: [32m'Increase the number of tools in my toolbelt'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gshow collections
+[1mtodos[0m
+[1G[0Jthe_database> [15G[1G[0Jthe_database> show collections[31G[1G[0Jthe_database> db.todos.find({})[32G
+[
+  {
+    _id: ObjectId([32m'65a48522d5c4726d0de2fdbd'[39m),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'65a48522d5c4726d0de2fdbe'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId([32m'65a52bfc5444d56802b9e4d7'[39m),
+    text: [32m'Increase the number of tools in my toolbelt'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId([32m'65a539817df4b48b9bf0e9c2'[39m),
+    text: [32m'Increase the number of tools in my toolbelt'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId([32m'65a53b3015346756de2444c0'[39m),
+    text: [32m'Increase the number of tools in my toolbelt'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gexit
+[?2004hroot@ff08f7165fe5:/# exit
+[?2004lexit
+[?2004h]0;prajjwalyd@DESKTOP-FT1DGE0: /mnt/c/Users/91946/Downloads/git-repos/full-stack-open-containers/todo-app/todo-backend[01;32mprajjwalyd@DESKTOP-FT1DGE0[00m:[01;34m/mnt/c/Users/9
