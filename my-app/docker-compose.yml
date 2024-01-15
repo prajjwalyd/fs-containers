@@ -1,0 +1,34 @@
+services:
+  prod-mongo:
+    image: mongo
+    ports:
+      - 3456:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_DATABASE: the_database
+    volumes:
+      - ./backend/mongo_data:/data/db
+
+  prod-backend:
+    image: backend-prod
+    build:
+      context: ./backend # The context will pick this directory as the "build context"
+    volumes:
+      - ./backend/:/usr/src/app
+    ports:
+      - 4000:5000
+    environment:
+      - MONGODB_URI=mongodb://root:example@prod-mongo:27017/
+    depends_on:
+      - prod-mongo
+
+  prod-nginx-frontend:
+    image: nginx-frontend-prod
+    build:
+      context: ./frontend/ # The context will pick this directory as the "build context"
+      dockerfile: Dockerfile # This will simply tell which dockerfile to read
+    ports:
+      - 8080:80
+    depends_on:
+      - prod-backend
