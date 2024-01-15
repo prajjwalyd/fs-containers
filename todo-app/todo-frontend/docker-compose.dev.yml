@@ -1,4 +1,4 @@
-ervices:
+services:
   app:
     image: todo-frontend-dev
     build:
@@ -9,3 +9,16 @@ ervices:
     ports:
       - 3000:3000
     container_name: todo-frontend-dev # This will name the container todo-frontend-dev
+  server:
+    container_name: todo-backend-dev # This will name the container todo-frontend-dev 
+    image: todo-backend-dev
+    build:
+      context: . # The context will pick this directory as the "build context"
+    command: ["npm", "run", "dev"] # Overwrite the CMD
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - 4000:3000
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - MONGO_URL=mongodb://the_username:the_password@mongo:27017/the_database
